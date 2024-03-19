@@ -1,9 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
 
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  min-height: 100vh;
+    margin: 0;
+    min-height: 100vh;
+    font-family: Jost, sans-serif;
+    overflow: hidden;
+}
+
+main {
+    position: relative;
+}
+
+.header {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 70%);
+    width: 100vw;
+}
+
+.header h1 {
+    font-size: 100px;
+    font-weight: 500;
+    font-style: italic;
+    text-align: center;
+    animation: focus-in-contract;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+
+@keyframes focus-in-contract {
+    0% {
+        letter-spacing: 1em;
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        letter-spacing: 0;
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+.social-media-icons {
+    font-size: 70px;
+    position: relative;
+    top: -60px;
+    text-align: center;
+}
+
+.social-media-icons i {
+    cursor: pointer;
+    transition: transform 0.5s ease;
+    animation: focus-in-contract 3s linear;
+}
+
+.social-media-icons i:hover {
+    transform: scale(1.1);
+}
+
+.footer {
+    position: absolute;
+    top: calc(100vh - 50px);
+    width: 100%;
+    text-align: center;
 }
