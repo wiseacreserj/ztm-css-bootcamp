@@ -7,6 +7,11 @@
     --background: rgba(255, 255, 255, 1);
 }
 
+[data-theme="dark"] {
+    --on-background: rgb(255, 255, 255, 0.9);
+    --background: rgba(18, 18, 18, 1);
+}
+
 /* General */
 
 html {
@@ -20,6 +25,7 @@ body {
     overflow-x: hidden;
     color: var(--on-background);
     background-color: var(--background);
+    transition: background-color 0.7s ease, color 0.7s ease;
 }
 
 main {
@@ -91,6 +97,31 @@ h2 {
 }
 
 .social-media-icons i:hover {
+    transform: scale(1.1);
+}
+
+/* Section 1 */
+/* Dark Mode Switch */
+.theme-switcher {
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    position: fixed;
+    top: 30px;
+    right: 25px;
+    cursor: pointer;
+}
+.theme-switcher span {
+    margin-right: 10px;
+    font-size: 1rem;
+    color: var(--on-background);
+}
+
+.fas {
+    font-size: 30px;
+}
+
+.fas:hover {
     transform: scale(1.1);
 }
 
