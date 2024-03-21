@@ -16,6 +16,7 @@
 
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -40,6 +41,66 @@ a {
 a:hover {
     padding-bottom: 5px;
     border-bottom: 5px solid var(--on-background);
+}
+
+/* Navigation */
+
+.menu-icon {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.menu-icon div {
+    height: 0.25rem;
+    background-color: var(--on-background);
+    transition: 0.4s;
+}
+
+.active .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.active .bar2 {
+    opacity: 0;
+}
+
+.active .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+nav {
+    height: 90vh;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+    z-index: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 85%;
+    font-size: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+nav.active {
+    transform: translateX(0);
 }
 
 /* Sections */
@@ -86,7 +147,7 @@ h2 {
 .social-media-icons {
     font-size: 70px;
     position: relative;
-    top: -60px;
+    top: -80px;
     text-align: center;
 }
 
@@ -107,7 +168,7 @@ h2 {
     align-items: center;
     z-index: 100;
     position: fixed;
-    top: 30px;
+    top: 15px;
     right: 25px;
     cursor: pointer;
 }
