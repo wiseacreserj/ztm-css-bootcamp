@@ -283,7 +283,7 @@ h2 {
     }
 }
 
-/* Table Horizontal */
+/* Tablet Horizontal */
 
 @media screen and (min-width: 900px) and (max-width: 1180px) {
     .main-image {
@@ -296,5 +296,41 @@ h2 {
         height: 45%;
         padding: 10px;
         border-width: 5px;
+    }
+}
+
+/* Tablet Vertical */
+
+@media screen and (min-width: 700px) and (max-width: 900px) {
+    /* Section 2 */
+    .main-image {
+        height: auto;
+        width: 85%;
+        border-width: 5px;
+        top: -35%;
+        padding: 10px;
+    }
+
+    /* Section 3 */
+
+    .small-image {
+        height: auto;
+        width: 75%;
+        border-width: 5px;
+        padding: 10px;
+        margin: auto 5% !important;
+        position: relative;
+        left: 5.5%;
+    }
+
+    /* Section 4 */
+
+    #section-4 {
+        margin-top: 50vh;
+    }
+
+    .blog-container {
+        position: relative;
+        top: -20%;
     }
 }
