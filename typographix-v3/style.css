@@ -5,6 +5,7 @@
 :root {
     --on-background: rgb(66, 66, 66);
     --background: rgba(255, 255, 255, 1);
+    --letter-spacing-animation: 1em;
 }
 
 [data-theme="dark"] {
@@ -134,7 +135,7 @@ h2 {
 }
 
 .header h1 {
-    font-size: 100px;
+    font-size: clamp(60px, 10vw, 100px);
     font-weight: 500;
     font-style: italic;
     text-align: center;
@@ -257,4 +258,43 @@ h2 {
     width: 100%;
     text-align: center;
     color: white;
+}
+
+/* Media Queries -------------------------------- */
+
+/* All Mobile Devices */
+
+@media screen and (max-width: 1180px) {
+    :root {
+        --letter-spacing-animation: 0.1em;
+    }
+
+    nav {
+        width: 100%;
+        background: var(--background);
+    }
+
+    .wave > svg:last-child {
+        border-bottom: 20px solid #3a5a40;
+    }
+
+    .footer {
+        bottom: 10px;
+    }
+}
+
+/* Table Horizontal */
+
+@media screen and (min-width: 900px) and (max-width: 1180px) {
+    .main-image {
+        width: 75%;
+        height: auto;
+        top: -5%;
+    }
+
+    .small-image {
+        height: 45%;
+        padding: 10px;
+        border-width: 5px;
+    }
 }
