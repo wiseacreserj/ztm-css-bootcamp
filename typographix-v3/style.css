@@ -334,3 +334,19 @@ h2 {
         top: -20%;
     }
 }
+
+/* Smartphone Horizontal */
+
+@media screen and (min-width: 600px) and (max-width: 950px) {
+    nav ul {
+        font-size: 1.25rem;
+    }
+
+    .small-image {
+        height: 70%;
+    }
+
+    #section-4 h2 {
+        margin-top: 15vh;
+    }
+}
