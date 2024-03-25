@@ -350,3 +350,41 @@ h2 {
         margin-top: 15vh;
     }
 }
+
+/* Smartphones Vertical */
+
+@media screen and (max-width: 600px) {
+    /* Section 1 */
+    .social-media-icons {
+        font-size: 45px;
+        top: -50px;
+    }
+
+    /* Section 2 */
+
+    .main-image {
+        top: -45%;
+        height: auto;
+        max-width: 85%;
+        border-width: 5px;
+        padding: 10px;
+    }
+
+    /* Section 3 */
+
+    .small-image {
+        height: auto;
+        width: 75%;
+        border-width: 5px;
+        padding: 10px;
+        margin: auto 5% !important;
+        position: relative;
+        left: 3.5%;
+    }
+
+    /* Section 4 */
+
+    .blog-container {
+        width: 80%;
+    }
+}
