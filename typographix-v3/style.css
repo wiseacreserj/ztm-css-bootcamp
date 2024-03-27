@@ -138,3 +138,57 @@ footer {
 .social-icons a:hover {
     color: hsl(0, 0%, 25%);
 }
+
+/* Media Queries ------------------- */
+
+/* Tablet */
+
+@media screen and (max-width: 1025px) {
+    .nav-left h1 {
+        font-size: 1.5rem !important;
+    }
+
+    .main {
+        width: 90%;
+    }
+
+    .featured-article h1 {
+        font-size: 2.2rem;
+    }
+
+    .article h2 {
+        font-size: 1.7rem;
+    }
+}
+
+/* Smartphones */
+
+@media screen and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 10px 5%;
+    }
+
+    .nav-right a {
+        margin-left: unset;
+        margin-right: 20px;
+    }
+
+    .featured-article h1 {
+        font-size: 1.5rem;
+    }
+
+    .featured-article p {
+        font-size: 1rem;
+    }
+
+    .smaller-articles {
+        flex-direction: column;
+    }
+
+    .article {
+        margin: 10px 0;
+    }
+}
