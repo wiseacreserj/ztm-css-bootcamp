@@ -4,7 +4,6 @@ const checkScroll = () => {
     const navbar = document.getElementById("navbar");
     const logo = document.getElementById("logo");
     let scrollPosition = window.scrollY;
-    console.log(scrollPosition);
 
     // Add/Remove scrolled class based on scrollPositon
     if (scrollPosition > 20) {

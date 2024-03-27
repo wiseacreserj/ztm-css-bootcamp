@@ -38,10 +38,12 @@ nav {
     height: 60px;
     background: whitesmoke;
     padding: 5px 5%;
+    color: rgba(55, 55, 55);
 }
 
 .nav-left h1 {
     font-size: 3rem;
+    font-weight: 900;
     transition: font-size 0.3s ease;
 }
 
