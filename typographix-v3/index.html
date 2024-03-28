@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Typographix Blog</title>
+        <title>Typographix V3</title>
         <link rel="icon" type="image/png" href="favicon.png" />
         <link
             rel="stylesheet"
@@ -13,109 +13,156 @@
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <!-- Sticky Navbar -->
-        <nav id="navbar">
-            <div class="nav-left">
-                <h1 id="logo">Typographix</h1>
+        <!-- Navigation -->
+        <div class="nav-wrapper">
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
             </div>
-            <div class="nav-right">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
-            </div>
-        </nav>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#section-1" onclick="hideMenu()">Home</a></li>
+                    <li>
+                        <a href="#section-2" onclick="hideMenu()">About</a>
+                    </li>
+                    <li>
+                        <a href="#section-3" onclick="hideMenu()">Gallery</a>
+                    </li>
+                    <li><a href="#section-4" onclick="hideMenu()">Blog</a></li>
+                    <li>
+                        <a href="#section-5" onclick="hideMenu()">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <main>
+            <!-- Section 1 -->
+            <section class="" id="section-1">
+                <div class="theme-switcher" id="theme-switcher">
+                    <span class="toggle-text">Light Mode</span>
+                    <i class="fas fa-sun"></i>
+                </div>
+                <!-- Header -->
+                <header class="header">
+                    <h1>Typographix</h1>
+                    <div class="social-media-icons">
+                        <i class="fa-brands fa-facebook" title="Facebook"></i>
+                        <i class="fa-brands fa-instagram" title="Instagram"></i>
+                        <i class="fa-brands fa-twitter" title="Twitter"></i>
+                        <i class="fa-brands fa-youtube" title="Youtube"></i>
+                        <i class="fa-brands fa-github" title="Guthub"></i>
+                    </div>
+                </header>
+            </section>
+            <!-- Section 2 -->
+            <section id="section-2">
+                <h2>Cutting Edge Image & Text Generation</h2>
 
-        <!-- Main Content -->
-        <main class="main">
-            <!-- Article 1 -->
-            <div class="featured-article">
                 <img
-                    src="https://plus.unsplash.com/premium_photo-1711051475117-f3a4d3ff6778?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt="Computer Setup"
+                    src="https://unsplash.com/photos/p0j-mE6mGo4/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzEwOTM0ODA5fA&force=true&w=2400"
+                    alt="Retro Gaming Setup"
+                    class="main-image"
                 />
-                <h1>
-                    Enhancing Productivity: Revolutionizing Modern Workspaces
-                </h1>
-                <p>
-                    In the fast-paced world of modern business, productivity is
-                    a key determinant of success. As technology continues to
-                    evolve, so too do the ways in which we approach work. One of
-                    the most significant shifts in recent years has been the
-                    revolutionization of workspaces to better facilitate
-                    productivity and collaboration. In this article, we will
-                    explore the various strategies and technologies that are
-                    reshaping modern work environments to enhance productivity.
-                </p>
-                <a href="article1.html">Read More</a>
-            </div>
-            <!-- Three Smaller Articles -->
-            <div class="smaller-articles">
-                <!-- Article 2 -->
-                <div class="article">
+            </section>
+            <!-- Section 3 -->
+            <section id="section-3">
+                <h2>Gallery (Coming Soon)</h2>
+                <div class="image-container">
                     <img
-                        src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=1365&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                        alt="Robot on bench"
+                        src="https://unsplash.com/photos/p0j-mE6mGo4/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzEwOTM0ODA5fA&force=true&w=1920"
+                        alt=""
+                        class="small-image"
                     />
-                    <h2>
-                        Unveiling the Future: Quantum Leaps in Humanoid Robotics
-                    </h2>
-                    <p>
-                        The realm of robotics has seen remarkable advancements
-                        in recent years, with humanoid robots emerging at the
-                        forefront of innovation.
-                    </p>
-                    <a href="article2.html">Read More</a>
-                </div>
-
-                <!-- Article 3 -->
-                <div class="article">
                     <img
-                        src="https://images.unsplash.com/photo-1583594831795-7be809a8e82c?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                        alt="Underwater computer"
+                        src="https://unsplash.com/photos/p0j-mE6mGo4/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzEwOTM0ODA5fA&force=true&w=1920"
+                        alt=""
+                        class="small-image"
                     />
-                    <h2>Diving Deep: Underwater Cooling Computer Hardware</h2>
-                    <p>
-                        As the demand for high-performance computing continues
-                        to rise, the challenge of keeping hardware cool becomes
-                        increasingly critical.
-                    </p>
-                    <a href="article3.html">Read More</a>
-                </div>
-
-                <!-- Article 4 -->
-                <div class="article">
                     <img
-                        src="https://images.unsplash.com/photo-1608363188566-517a7786f5e1?q=80&w=1229&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                        alt="Windmills farm"
+                        src="https://unsplash.com/photos/p0j-mE6mGo4/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzEwOTM0ODA5fA&force=true&w=1920"
+                        alt=""
+                        class="small-image"
                     />
-                    <h2>Harnessing the Breeze: The Future of Wind Energy</h2>
-                    <p>
-                        As the world seeks sustainable alternatives to fossil
-                        fuels, wind energy has emerged as a prominent renewable
-                        energy source.
-                    </p>
-                    <a href="article4.html">Read More</a>
                 </div>
-            </div>
+            </section>
+            <!-- Section 4 -->
+            <section id="section-4">
+                <h2>Blog Updates (Coming Soon)</h2>
+                <div class="blog-container">
+                    <article class="blog-item">
+                        <h3><a href="/">Blog Item 1 Here</a></h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Quis aut perferendis deserunt odio officiis
+                            labore iusto sunt quia id. Exercitationem at quidem
+                            consequuntur esse dolores facilis, voluptates
+                            suscipit ad deleniti!
+                        </p>
+                    </article>
+                    <article class="blog-item">
+                        <h3><a href="/">Blog Item 2 Here</a></h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Quis aut perferendis deserunt odio officiis
+                            labore iusto sunt quia id. Exercitationem at quidem
+                            consequuntur esse dolores facilis, voluptates
+                            suscipit ad deleniti!
+                        </p>
+                    </article>
+                    <article class="blog-item">
+                        <h3><a href="/">Blog Item 3 Here</a></h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Quis aut perferendis deserunt odio officiis
+                            labore iusto sunt quia id. Exercitationem at quidem
+                            consequuntur esse dolores facilis, voluptates
+                            suscipit ad deleniti!
+                        </p>
+                    </article>
+                </div>
+            </section>
+            <!-- Section 5 -->
+            <section id="section-5">
+                <h2><a href="mailto:example@example.com">Contact Us</a></h2>
+                <div class="wave">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 1440 320"
+                    >
+                        <path
+                            fill="#a3b18a"
+                            fill-opacity="1"
+                            d="M0,96L20,112C40,128,80,160,120,165.3C160,171,200,149,240,160C280,171,320,213,360,202.7C400,192,440,128,480,90.7C520,53,560,43,600,69.3C640,96,680,160,720,176C760,192,800,160,840,128C880,96,920,64,960,96C1000,128,1040,224,1080,224C1120,224,1160,128,1200,101.3C1240,75,1280,117,1320,122.7C1360,128,1400,96,1420,80L1440,64L1440,320L1420,320C1400,320,1360,320,1320,320C1280,320,1240,320,1200,320C1160,320,1120,320,1080,320C1040,320,1000,320,960,320C920,320,880,320,840,320C800,320,760,320,720,320C680,320,640,320,600,320C560,320,520,320,480,320C440,320,400,320,360,320C320,320,280,320,240,320C200,320,160,320,120,320C80,320,40,320,20,320L0,320Z"
+                        ></path>
+                    </svg>
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 1440 320"
+                    >
+                        <path
+                            fill="#588157"
+                            fill-opacity="1"
+                            d="M0,0L21.8,16C43.6,32,87,64,131,69.3C174.5,75,218,53,262,69.3C305.5,85,349,139,393,160C436.4,181,480,171,524,160C567.3,149,611,139,655,138.7C698.2,139,742,149,785,165.3C829.1,181,873,203,916,197.3C960,192,1004,160,1047,144C1090.9,128,1135,128,1178,160C1221.8,192,1265,256,1309,256C1352.7,256,1396,192,1418,160L1440,128L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z"
+                        ></path>
+                    </svg>
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 1440 320"
+                    >
+                        <path
+                            fill="#3a5a40"
+                            fill-opacity="1"
+                            d="M0,224L24,213.3C48,203,96,181,144,186.7C192,192,240,224,288,234.7C336,245,384,235,432,240C480,245,528,267,576,245.3C624,224,672,160,720,144C768,128,816,160,864,165.3C912,171,960,149,1008,165.3C1056,181,1104,235,1152,218.7C1200,203,1248,117,1296,69.3C1344,21,1392,11,1416,5.3L1440,0L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"
+                        ></path>
+                    </svg>
+                </div>
+                <!-- Footer -->
+                <footer class="footer">
+                    <small>&copy; 2024 Typographix, All rights reserved</small>
+                </footer>
+            </section>
         </main>
-        <!-- Footer -->
-        <footer>
-            <small>&copy; 2024 Typographix</small>
-            <div class="social-icons">
-                <a href="#"
-                    ><i class="fa-brands fa-facebook" title="Facebook"></i
-                ></a>
-                <a href="#"
-                    ><i class="fa-brands fa-twitter" title="Twitter"></i
-                ></a>
-                <a href="#"
-                    ><i class="fa-brands fa-instagram" title="Instagram"></i
-                ></a>
-                <a href="#"
-                    ><i class="fa-brands fa-linkedin" title="Linkedin"></i
-                ></a>
-            </div>
-        </footer>
         <!-- Script -->
         <script src="script.js"></script>
     </body>
