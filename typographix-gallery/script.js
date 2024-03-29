@@ -1,3 +1,29 @@
+//Allow for selection of image trigger modal view
+
+const items = document.querySelectorAll(".grid > div");
+
+items.forEach((item) => {
+    item.title = "Click to Enlagre";
+    item.addEventListener("click", () => {
+        const imgSrc = item.querySelector("img").src;
+        //Create the modal div
+        const modal = document.createElement("div");
+        modal.classList.add("modal");
+        //Create img element
+        const imgElement = document.createElement("img");
+        imgElement.src = imgSrc;
+        imgElement.alt = "Enlarged Abstract Image";
+        //Append the img to modal
+        modal.appendChild(imgElement);
+        //Add the modal to the body
+        document.body.appendChild(modal);
+        //Remove the modal when it's clicked
+        modal.addEventListener("click", () => {
+            modal.remove();
+        });
+    });
+});
+
 //Function to check if page is scrolled and adjust the logo size
 
 const checkScroll = () => {
