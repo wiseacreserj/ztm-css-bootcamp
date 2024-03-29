@@ -48,6 +48,57 @@ nav {
     color: hsl(0, 0%, 25%);
 }
 
+/* Main Content */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 180px);
+    grid-gap: 5px;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1600px;
+}
+
+.item1 {
+    grid-area: 1 / 1 / 4 / 2;
+}
+.item2 {
+    grid-area: 4 / 1 / 5 / 3;
+}
+.item3 {
+    grid-area: 3 / 2 / 4 / 3;
+}
+.item4 {
+    grid-area: 1 / 2 / 3 / 4;
+}
+.item5 {
+    grid-area: 3 / 3 / 5 / 4;
+}
+.item6 {
+    grid-area: 1 / 4 / 3 / 6;
+}
+.item7 {
+    grid-area: 1 / 6 / 4 / 7;
+}
+.item8 {
+    grid-area: 3 / 5 / 4 / 6;
+}
+.item9 {
+    grid-area: 3 / 4 / 5 / 5;
+}
+.item10 {
+    grid-area: 4 / 5 / 5 / 7;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    cursor: pointer;
+}
+
 /* Footer */
 
 footer {
@@ -80,6 +131,25 @@ footer {
 @media screen and (max-width: 1025px) {
     .nav-left h1 {
         font-size: 1.5rem !important;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(10, minmax(150px, auto));
+        padding: 5px;
+        margin: auto;
+    }
+
+    .grid > div {
+        grid-area: auto;
+    }
+}
+
+/* Target horizontal lanscape */
+
+@media (orientation: landscape) and (max-width: 1024px) {
+    img {
+        max-height: 90vh;
     }
 }
 
