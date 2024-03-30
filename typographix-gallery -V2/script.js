@@ -1,6 +1,6 @@
 //Allow for selection of image trigger modal view
 
-const items = document.querySelectorAll(".grid > div");
+const items = document.querySelectorAll(".item");
 
 items.forEach((item) => {
     item.title = "Click to Enlagre";
@@ -17,9 +17,15 @@ items.forEach((item) => {
         modal.appendChild(imgElement);
         //Add the modal to the body
         document.body.appendChild(modal);
+        setTimeout(() => {
+            imgElement.classList.add("reveal");
+        }, 10);
         //Remove the modal when it's clicked
         modal.addEventListener("click", () => {
-            modal.remove();
+            imgElement.classList.remove("reveal");
+            setTimeout(() => {
+                modal.remove();
+            }, 300);
         });
     });
 });
