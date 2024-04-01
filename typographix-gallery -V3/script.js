@@ -1,3 +1,18 @@
+//Loading animation
+
+const getRandomColor = () => {
+    return "#" + Math.random().toString(16).slice(-6);
+};
+
+const setRandomColors = () => {
+    document.querySelector(".color1").style.backgroundColor = getRandomColor();
+    document.querySelector(".color2").style.backgroundColor = getRandomColor();
+    document.querySelector(".color3").style.backgroundColor = getRandomColor();
+};
+
+setRandomColors();
+setInterval(setRandomColors, 2000);
+
 //Allow for selection of image trigger modal view
 
 const items = document.querySelectorAll(".item");
