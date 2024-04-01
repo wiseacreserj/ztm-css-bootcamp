@@ -13,6 +13,15 @@ const setRandomColors = () => {
 setRandomColors();
 setInterval(setRandomColors, 2000);
 
+//Show loader for 3 seconds, then show content
+
+setTimeout(() => {
+    document.querySelector(".loader-container").style.display = "none";
+    document.querySelectorAll(".item").forEach((el) => {
+        el.style.opacity = "1";
+    });
+}, 3000);
+
 //Allow for selection of image trigger modal view
 
 const items = document.querySelectorAll(".item");
