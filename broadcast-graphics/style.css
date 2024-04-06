@@ -46,7 +46,7 @@ body {
     position: absolute;
     z-index: 1;
     height: 69px;
-    width: 600px;
+
     max-width: calc(90vw + 15px);
     background: url(./gold.jpg) no-repeat;
     background-size: cover;
@@ -58,7 +58,7 @@ body {
     position: absolute;
     z-index: 2;
     height: 70px;
-    width: 585px;
+
     max-width: 90vw;
     background: url(./black.jpg) no-repeat;
     background-size: cover;
@@ -88,7 +88,7 @@ body {
     position: absolute;
     top: 69px;
     left: -8px;
-    width: 593px;
+
     clip-path: polygon(8px 0, 100% 0, 100% 100%, 0% 100%);
 }
 
