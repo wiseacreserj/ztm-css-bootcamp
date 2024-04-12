@@ -188,3 +188,38 @@ nav.active {
         top: 60px;
     }
 }
+
+/* About Section ----------------------------------- */
+
+.about-container {
+    display: grid;
+    place-items: center;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 5px;
+    color: white;
+    width: 50vw;
+}
+
+.box1 {
+    grid-area: 1 / 1 / 3 / 3;
+}
+.box2 {
+    grid-area: 3 / 1 / 5 / 2;
+}
+.box3 {
+    grid-area: 3 / 2 / 5 / 3;
+}
+.box4 {
+    grid-area: 5 / 1 / 7 / 2;
+}
+.box5 {
+    grid-area: 5 / 2 / 7 / 3;
+}
+.box6 {
+    grid-area: 7 / 1 / 9 / 3;
+}
