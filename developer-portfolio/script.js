@@ -13,7 +13,7 @@ const hideMenu = () => {
 };
  */
 
-//Slideshow------------------------------------------------
+//Slideshow ------------------------------------------------
 let currentImageIndex = 0;
 const images = document.querySelectorAll(".slide");
 
@@ -24,3 +24,19 @@ const switchImage = () => {
 };
 
 setInterval(switchImage, 5000);
+
+/* Banner ------------------------------------------------- */
+
+const bannerContent = document.getElementById("bannerContent");
+let messageHTML =
+    "<span class='contact-message'>Contact us at email@example.com We are here to help! </span>";
+let repeatedMessage = messageHTML.repeat(10);
+
+//Set the repeated messages as the content
+bannerContent.innerHTML = repeatedMessage + repeatedMessage;
+
+const scrollBanner = () => {};
+
+//Houdini Worklet
+
+CSS.paintWorklet.addModule("https://unpkg.com/parallelowow/parallelowow.js");
