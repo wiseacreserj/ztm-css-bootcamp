@@ -68,14 +68,13 @@ section {
     position: fixed;
     top: 0;
     left: 0;
-    background: var(--background);
     width: 100%;
     z-index: 10;
 }
 
 nav {
     height: 100%;
-    color: var(--on-background);
+    color: white;
     position: fixed;
     top: 0;
     left: 0;
@@ -97,6 +96,15 @@ nav ul {
 
 nav ul li {
     margin: 1rem 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    &:hover {
+        padding-bottom: 5px;
+        border-bottom: 5px solid white;
+    }
 }
 
 nav.active {
