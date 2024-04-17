@@ -32,7 +32,7 @@ section {
 
 /* Navigation */
 
-/* .menu-icon {
+.menu-icon {
     position: fixed;
     top: 15px;
     left: 15px;
@@ -47,7 +47,7 @@ section {
 
 .menu-icon div {
     height: 0.25rem;
-    background-color: var(--on-background);
+    background-color: white;
     transition: all 0.3s ease-in-out;
 }
 
@@ -102,7 +102,6 @@ nav ul li {
 nav.active {
     transform: translateX(0);
 }
- */
 
 /* Home Section --------------------------------------------- */
 

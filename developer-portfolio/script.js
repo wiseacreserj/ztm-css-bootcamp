@@ -1,5 +1,5 @@
 //Navigation ----------------------------------------
-/* const nav = document.querySelector("#nav");
+const nav = document.querySelector("#nav");
 const menuIcon = document.querySelector(".menu-icon");
 
 const toggleMenu = () => {
@@ -11,7 +11,6 @@ const hideMenu = () => {
     nav.classList.remove("active");
     menuIcon.classList.remove("active");
 };
- */
 
 //Slideshow ------------------------------------------------
 let currentImageIndex = 0;
@@ -34,8 +33,6 @@ let repeatedMessage = messageHTML.repeat(10);
 
 //Set the repeated messages as the content
 bannerContent.innerHTML = repeatedMessage + repeatedMessage;
-
-const scrollBanner = () => {};
 
 //Houdini Worklet
 
