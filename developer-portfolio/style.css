@@ -478,4 +478,40 @@ footer small {
         width: 80vw;
         padding: 50px;
     }
+    .projects-grid {
+        margin: 0 10%;
+    }
+
+    .banner {
+        transform: rotate(0deg);
+    }
+}
+
+/* Table Horizontal (Large) */
+
+@media screen and (min-width: 800px) and (max-width: 1180px) {
+    .about-grid {
+        width: 80vw;
+    }
+
+    .text-box {
+        width: 80vw;
+        padding: 50px;
+    }
+    .projects-grid {
+        margin: 0 10%;
+    }
+}
+
+/* Tablet Horizontal (Small) */
+
+@media screen and (orientation: landscape) and (max-height: 769px) {
+    .section-title h2 {
+        font-size: 3rem;
+    }
+
+    .banner {
+        transform: rotate(0deg);
+    }
+}
 }
