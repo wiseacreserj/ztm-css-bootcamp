@@ -455,3 +455,27 @@ footer small {
 }
 
 /* Media Queries ----------------------------------- */
+
+/* All Mobile Devices */
+@media screen and (max-width: 1180px) {
+    html {
+        scroll-behavior: auto;
+    }
+    nav {
+        width: 100%;
+        background: black;
+    }
+}
+
+/* Tablet Vertical (Large) */
+
+@media screen and (orientation: portrait) and (max-width: 1180px) {
+    .about-grid {
+        width: 80vw;
+    }
+
+    .text-box {
+        width: 80vw;
+        padding: 50px;
+    }
+}
