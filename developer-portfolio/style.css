@@ -367,7 +367,7 @@ nav.active {
     background-image: linear-gradient(
         to bottom,
         rgba(0, 0, 0, 0.1),
-        rgba(0, 0, 0, 0.5)
+        rgba(0, 0, 0, 0.8)
     );
 }
 
@@ -465,6 +465,10 @@ footer small {
         width: 100%;
         background: black;
     }
+
+    nav ul {
+        padding-left: 0;
+    }
 }
 
 /* Tablet Vertical (Large) */
@@ -514,4 +518,47 @@ footer small {
         transform: rotate(0deg);
     }
 }
+
+/* Smartphone Horizontal */
+
+@media screen and (min-width: 600px) and (max-width: 950px) {
+    .page-title h1 {
+        font-size: 4rem;
+    }
+
+    .banner {
+        bottom: 80px;
+    }
+}
+
+/* Smartphone Vertical */
+
+@media screen and (max-width: 600px) {
+    .section-title h2 {
+        font-size: 3rem;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        width: 100vw;
+    }
+
+    .box1,
+    .box2,
+    .box3,
+    .box4,
+    .box5,
+    .box5 {
+        grid-area: unset;
+        grid-column: 1;
+    }
+
+    .text-box {
+        width: 90vw;
+        padding: 40px;
+    }
+
+    .banner {
+        transform: rotate(0deg);
+    }
 }
