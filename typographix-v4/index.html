@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Typographix V3</title>
+        <link rel="icon" type="image/png" href="favicon.png" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        />
+        <link rel="stylesheet" href="./scrollbar.css" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <!-- Navigation -->
+        <div class="nav-wrapper">
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#section-1" onclick="hideMenu()">Home</a></li>
+                    <li>
+                        <a href="#section-2" onclick="hideMenu()">About</a>
+                    </li>
+                    <li>
+                        <a href="#section-3" onclick="hideMenu()">Gallery</a>
+                    </li>
+                    <li><a href="#section-4" onclick="hideMenu()">Blog</a></li>
+                    <li>
+                        <a href="#section-5" onclick="hideMenu()">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <main>
+            <!-- Section 1 -->
+            <section class="" id="section-1">
+                <div class="theme-switcher" id="theme-switcher">
+                    <span class="toggle-text">Light Mode</span>
+                    <i class="fas fa-sun"></i>
+                </div>
+                <!-- Header -->
+                <header class="header">
+                    <h1>Typographix</h1>
+                    <div class="social-media-icons">
+                        <i class="fa-brands fa-facebook" title="Facebook"></i>
+                        <i class="fa-brands fa-instagram" title="Instagram"></i>
+                        <i class="fa-brands fa-twitter" title="Twitter"></i>
+                        <i class="fa-brands fa-youtube" title="Youtube"></i>
+                        <i class="fa-brands fa-github" title="Guthub"></i>
+                    </div>
+                </header>
+            </section>
+            <!-- Section 2 -->
+            <section id="section-2">
+                <h2>Cutting Edge Image & Text Generation</h2>
+
+                <img
+                    src="https://unsplash.com/photos/p0j-mE6mGo4/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzEwOTM0ODA5fA&force=true&w=2400"
+                    alt="Retro Gaming Setup"
+                    class="main-image"
+                />
+            </section>
+            <!-- Section 3 -->
+            <section id="section-3">
+                <h2>Gallery (Coming Soon)</h2>
+                <div class="image-container">
+                    <img
+                        src="https://unsplash.com/photos/p0j-mE6mGo4/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzEwOTM0ODA5fA&force=true&w=1920"
+                        alt=""
+                        class="small-image"
+                    />
+                    <img
+                        src="https://unsplash.com/photos/p0j-mE6mGo4/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzEwOTM0ODA5fA&force=true&w=1920"
+                        alt=""
+                        class="small-image"
+                    />
+                    <img
+                        src="https://unsplash.com/photos/p0j-mE6mGo4/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzEwOTM0ODA5fA&force=true&w=1920"
+                        alt=""
+                        class="small-image"
+                    />
+                </div>
+            </section>
+            <!-- Section 4 -->
+            <section id="section-4">
+                <h2>Blog Updates (Coming Soon)</h2>
+                <div class="blog-container">
+                    <article class="blog-item">
+                        <h3><a href="/">Blog Item 1 Here</a></h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Quis aut perferendis deserunt odio officiis
+                            labore iusto sunt quia id. Exercitationem at quidem
+                            consequuntur esse dolores facilis, voluptates
+                            suscipit ad deleniti!
+                        </p>
+                    </article>
+                    <article class="blog-item">
+                        <h3><a href="/">Blog Item 2 Here</a></h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Quis aut perferendis deserunt odio officiis
+                            labore iusto sunt quia id. Exercitationem at quidem
+                            consequuntur esse dolores facilis, voluptates
+                            suscipit ad deleniti!
+                        </p>
+                    </article>
+                    <article class="blog-item">
+                        <h3><a href="/">Blog Item 3 Here</a></h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Quis aut perferendis deserunt odio officiis
+                            labore iusto sunt quia id. Exercitationem at quidem
+                            consequuntur esse dolores facilis, voluptates
+                            suscipit ad deleniti!
+                        </p>
+                    </article>
+                </div>
+            </section>
+            <!-- Section 5 -->
+            <section id="section-5">
+                <h2><a href="mailto:example@example.com">Contact Us</a></h2>
+                <div class="wave">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 1440 320"
+                    >
+                        <path
+                            fill="#a3b18a"
+                            fill-opacity="1"
+                            d="M0,96L20,112C40,128,80,160,120,165.3C160,171,200,149,240,160C280,171,320,213,360,202.7C400,192,440,128,480,90.7C520,53,560,43,600,69.3C640,96,680,160,720,176C760,192,800,160,840,128C880,96,920,64,960,96C1000,128,1040,224,1080,224C1120,224,1160,128,1200,101.3C1240,75,1280,117,1320,122.7C1360,128,1400,96,1420,80L1440,64L1440,320L1420,320C1400,320,1360,320,1320,320C1280,320,1240,320,1200,320C1160,320,1120,320,1080,320C1040,320,1000,320,960,320C920,320,880,320,840,320C800,320,760,320,720,320C680,320,640,320,600,320C560,320,520,320,480,320C440,320,400,320,360,320C320,320,280,320,240,320C200,320,160,320,120,320C80,320,40,320,20,320L0,320Z"
+                        ></path>
+                    </svg>
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 1440 320"
+                    >
+                        <path
+                            fill="#588157"
+                            fill-opacity="1"
+                            d="M0,0L21.8,16C43.6,32,87,64,131,69.3C174.5,75,218,53,262,69.3C305.5,85,349,139,393,160C436.4,181,480,171,524,160C567.3,149,611,139,655,138.7C698.2,139,742,149,785,165.3C829.1,181,873,203,916,197.3C960,192,1004,160,1047,144C1090.9,128,1135,128,1178,160C1221.8,192,1265,256,1309,256C1352.7,256,1396,192,1418,160L1440,128L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z"
+                        ></path>
+                    </svg>
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 1440 320"
+                    >
+                        <path
+                            fill="#3a5a40"
+                            fill-opacity="1"
+                            d="M0,224L24,213.3C48,203,96,181,144,186.7C192,192,240,224,288,234.7C336,245,384,235,432,240C480,245,528,267,576,245.3C624,224,672,160,720,144C768,128,816,160,864,165.3C912,171,960,149,1008,165.3C1056,181,1104,235,1152,218.7C1200,203,1248,117,1296,69.3C1344,21,1392,11,1416,5.3L1440,0L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"
+                        ></path>
+                    </svg>
+                </div>
+                <!-- Footer -->
+                <footer class="footer">
+                    <small>&copy; 2024 Typographix, All rights reserved</small>
+                </footer>
+            </section>
+        </main>
+        <!-- Script -->
+        <script src="script.js"></script>
+    </body>
+</html>
