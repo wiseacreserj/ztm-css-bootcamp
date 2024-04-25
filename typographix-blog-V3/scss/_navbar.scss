@@ -1,0 +1,62 @@
+
+/* Sticky Navbar */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    height: 60px;
+    background: var(--backgound);
+    padding: 5px 5%;
+    color: var(--secondary-font-color);
+
+    .nav-left {
+        h1 {
+            font-size: 3rem;
+            font-weight: 900;
+            transition: font-size 0.3s ease;
+        }
+    }
+
+    &.scroleed .nav-left h1 {
+        font-size: 1.5rem;
+    }
+
+    .nav-right {
+        display: flex;
+        align-items: center;
+
+        a {
+            margin-left: 20px;
+            color: var(--secondary-font-color);
+            text-decoration: none;
+            &:hover {
+                filter: brightness(1.1);
+            }
+        }
+    }
+}
+
+
+/* Dark Mode Switch */
+.theme-switcher {
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    cursor: pointer;
+
+    
+    .fas {
+        font-size: 30px;
+        margin-left: 20px;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+
+}
