@@ -146,6 +146,62 @@ a:hover {
   filter: brightness(0.9);
 }
 
+article {
+  width: 90%;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+article h1 {
+  font-size: 2.5rem;
+  margin: 20px 0;
+  color: var(--secondary-font-color);
+}
+article h2 {
+  color: var(--secondary-font-color);
+}
+article p {
+  font-size: 1.2rem;
+  color: var(--primary-font-color);
+}
+article img {
+  width: 500px;
+  height: 700px;
+  object-fit: cover;
+}
+article .text-content {
+  width: 75ch;
+  margin: auto 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 20px 0;
+}
+
+p {
+  font-size: 1.2rem;
+  color: rgb(85, 85, 85);
+}
+
+/* Variations */
+.centered-image-article img {
+  width: 100%;
+  max-height: 45vh;
+  margin-bottom: 30px;
+}
+
+.left-image-article {
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.right-image-article {
+  flex-direction: row-reverse;
+  align-items: flex-start;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
