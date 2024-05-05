@@ -38,13 +38,30 @@ body {
 .overlay {
   background-color: rgba(0, 0, 0, 0.5);
   display: grid;
-  place-items: center;
+  place-items: center center;
 }
 .overlay h1 {
   position: relative;
   color: rgb(150, 150, 150);
   font-size: clamp(3.5rem, 5vw, 6rem);
+  font-weight: 600;
   z-index: 10;
+  animation: colorChange 1.5s ease-in-out infinite alternate;
+}
+@keyframes colorChange {
+  from {
+    color: #636363;
+  }
+  to {
+    color: white;
+  }
+}
+.overlay p {
+  position: relative;
+  color: white;
+  text-align: center;
+  font-size: clamp(1rem, 5vw, 1.5rem);
+  font-weight: 200;
 }
 
 /* width */
