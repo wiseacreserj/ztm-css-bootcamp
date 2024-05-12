@@ -11,10 +11,14 @@ document.addEventListener("DOMContentLoaded", () => {
                     entry.target.classList.remove(toggleClass);
                 }
             });
+        }, observerOptions);
+        items.forEach((item) => {
+            observer.observe(item);
         });
     };
 
     //Create observers for different sections
+    createObserver("#about .phrase", { root: null, treshold: 1 }, "active");
 });
 
 //Navigation -------------------------------------------
