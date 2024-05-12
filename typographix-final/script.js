@@ -1,3 +1,22 @@
+document.addEventListener("DOMContentLoaded", () => {
+    //Function to create and observe IntersectionObservers
+
+    const createObserver = (selector, observerOptions, toggleClass) => {
+        const items = document.querySelectorAll(selector);
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add(toggleClass);
+                } else {
+                    entry.target.classList.remove(toggleClass);
+                }
+            });
+        });
+    };
+
+    //Create observers for different sections
+});
+
 //Navigation -------------------------------------------
 const nav = document.querySelector("#nav");
 const menuIcon = document.querySelector(".menu-icon");
