@@ -25,7 +25,7 @@
             transition-property: color;
             transition-timing-function: ease;
 
-            @for $i from 1 to 8 {
+            @for $i from 1 to 9 {
                 &:nth-child(#{$i}) {
                     transition-delay: $i * 0.1s;
                 }
