@@ -19,6 +19,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     //Create observers for different sections
     createObserver("#about .phrase", { root: null, treshold: 1 }, "active");
+    createObserver(
+        "#gallery .image-box",
+        { root: null, treshold: 1 },
+        "active"
+    );
 });
 
 //Navigation -------------------------------------------

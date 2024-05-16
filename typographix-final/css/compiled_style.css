@@ -135,7 +135,6 @@ body {
 }
 #gallery .image-box, #gallery .text-box {
   border-radius: 10px;
-  transition: all 0.3s ease;
 }
 #gallery .image-box:not(:last-child), #gallery .text-box:not(:last-child) {
   margin-bottom: 10px;
