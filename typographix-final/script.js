@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { root: null, treshold: 0.3 },
         "fadeInUp"
     );
+    createObserver("#contact > div", { root: null, treshold: 0.5 }, "fadeInUp");
 });
 
 //Navigation -------------------------------------------
