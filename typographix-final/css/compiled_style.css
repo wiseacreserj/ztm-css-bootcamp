@@ -168,6 +168,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  flex-direction: row;
   height: 100vh;
   position: relative;
   top: 50px;
@@ -243,6 +244,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: row;
   padding-top: 10vh;
 }
 #blog .blog-container {
@@ -418,6 +420,31 @@ body {
 #contact .contact-container .form-container form button:hover {
   background: #393939;
   color: rgb(200, 200, 200);
+}
+
+/* Footer Section ------------------------------------------- */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: rgb(18, 18, 18);
+  color: rgb(200, 200, 200);
+  padding: 20px 0;
+  font-size: 1.2rem;
+  position: relative;
+  z-index: 9;
+}
+footer .social-icons {
+  margin-top: 10px;
+}
+footer .social-icons a {
+  margin: 0 10px;
+  color: rgb(200, 200, 200);
+  font-size: 1.5rem;
+}
+footer .social-icons a:hover {
+  color: #fbfbfb;
 }
 
 /* Toast Message ----------------------------------------------- */
