@@ -30,6 +30,17 @@
 
         &.tall {
             height: 600px;
+            animation: levitation 4s ease-in-out infinite;
+        }
+
+        @keyframes levitation {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            
+            50% {
+                transform: translateY(-10px);
+            }
         }
 
         img {
