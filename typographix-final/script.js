@@ -24,6 +24,11 @@ document.addEventListener("DOMContentLoaded", () => {
         { root: null, treshold: 1 },
         "active"
     );
+    createObserver(
+        "#blog .featured-article, #blog .article",
+        { root: null, treshold: 0.3 },
+        "fadeInUp"
+    );
 });
 
 //Navigation -------------------------------------------
