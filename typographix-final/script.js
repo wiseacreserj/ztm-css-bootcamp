@@ -35,15 +35,22 @@ document.addEventListener("DOMContentLoaded", () => {
 //Navigation -------------------------------------------
 const nav = document.querySelector("#nav");
 const menuIcon = document.querySelector(".menu-icon");
+const listItems = document.querySelectorAll("#nav ul lia a");
 
 const toggleMenu = () => {
     nav.classList.toggle("active");
     menuIcon.classList.toggle("active");
+    listItems.forEach((listItem) => {
+        listItem.classList.toggle("active");
+    });
 };
 
 const hideMenu = () => {
     nav.classList.remove("active");
     menuIcon.classList.remove("active");
+    listItems.forEach((listItem) => {
+        listItem.classList.remove("active");
+    });
 };
 
 //Form Submition -------------------------------------------
