@@ -9,6 +9,11 @@
         width: 80%;
         padding: 50px;
 
+        @include tablet-horizontal-large {
+            width: 90%;
+            padding: 5%;
+        }
+
         a {
             text-decoration: none;
             color: $primary-color;
@@ -46,16 +51,22 @@
                 opacity: 0;
 
                 h3 {
-                    @include blog-title(1.8rem)
+                    @include blog-title(1.8rem);
+                    @include tablet-horizontal {
+                        font-size: 1.4rem;
+                    }
                 }
             
                 p {
                     font-size: 1rem;
-                   // color: $primary-font-color;
+                    @include tablet-horizontal {
+                        font-size: 0.9rem;
+                    }
                 }
 
                 img {
                     @extend %article-img;
+                    min-height: 300px;
                 }
             }
         } 

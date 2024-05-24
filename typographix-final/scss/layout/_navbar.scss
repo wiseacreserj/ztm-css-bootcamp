@@ -146,6 +146,10 @@
                         padding-bottom: 10px;
                         border-bottom: 1px solid;
                     }
+
+                    @include tablet-horizontal {
+                        font-size: 3rem;
+                    }
                 }
 
             }
