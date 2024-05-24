@@ -59,10 +59,23 @@
 //Media Queries 
 
 @mixin tablet-horizontal-large {
-    @media (orientation: landscape) and (max-width: 1181px) {
-        //test mq
+    @media  (max-width: 1367px) {
+        @content;
     }
 }
+
+@mixin tablet-horizontal {
+    @media (orientation: landscape) and (max-width: 1181px) {
+        @content;
+    }
+}
+
+@mixin tablet-vertical {
+    @media (orientation: portrait) and (max-width: 1025px) {
+        @content;
+    }
+}
+
 
 //Shared Animation
 

@@ -82,10 +82,20 @@ body {
   z-index: 10;
   height: 60px;
 }
+@media (max-width: 1367px) {
+  .nav-wrapper {
+    background: rgb(18, 18, 18);
+  }
+}
 .nav-wrapper .nav-left h1 {
   font-size: 3rem;
   color: #b3b3b3;
   font-weight: 300;
+}
+@media (max-width: 1367px) {
+  .nav-wrapper .nav-left h1 {
+    font-size: 2.5rem;
+  }
 }
 .nav-wrapper .nav-left h1 span {
   color: white;
@@ -93,6 +103,11 @@ body {
   margin: 0 5px;
   position: relative;
   top: 5px;
+}
+@media (max-width: 1367px) {
+  .nav-wrapper .nav-left h1 span {
+    top: 2.5px;
+  }
 }
 .nav-wrapper .nav-right .menu-icon {
   position: absolute;
