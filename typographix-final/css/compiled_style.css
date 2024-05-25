@@ -269,6 +269,11 @@ body {
     color: white;
   }
 }
+@media (orientation: portrait) and (max-width: 1025px) {
+  .overlay h1 {
+    font-size: 4rem;
+  }
+}
 .overlay p {
   position: relative;
   color: white;
@@ -295,12 +300,23 @@ body {
     margin-left: 5%;
   }
 }
+@media (orientation: portrait) and (max-width: 1025px) {
+  #about .about-container h2 {
+    margin-left: 5%;
+  }
+}
 #about .about-container p {
   width: 75ch;
   font-size: clamp(1rem, 5vw, 1.5rem);
   line-height: 1.8;
 }
 @media (orientation: landscape) and (max-width: 1181px) {
+  #about .about-container p {
+    width: 90%;
+    margin-left: 5%;
+  }
+}
+@media (orientation: portrait) and (max-width: 1025px) {
   #about .about-container p {
     width: 90%;
     margin-left: 5%;
@@ -355,11 +371,13 @@ body {
     margin: 0 2.5%;
   }
 }
-#gallery .image-box, #gallery .text-box {
-  border-radius: 10px;
-}
-#gallery .image-box:not(:last-child), #gallery .text-box:not(:last-child) {
-  margin-bottom: 10px;
+@media (orientation: portrait) and (max-width: 1025px) {
+  #gallery .gallery-container {
+    flex-direction: column;
+    height: auto;
+    top: 100px;
+    padding-bottom: 10vh;
+  }
 }
 #gallery .image-box {
   width: 300px;
@@ -373,6 +391,11 @@ body {
 #gallery .image-box.tall {
   height: 600px;
   animation: levitation 4s ease-in-out infinite;
+}
+@media (orientation: portrait) and (max-width: 1025px) {
+  #gallery .image-box.tall {
+    animation: none;
+  }
 }
 @keyframes levitation {
   0%, 100% {
@@ -420,6 +443,22 @@ body {
 #gallery .text-box h3 {
   color: rgb(200, 200, 200);
 }
+#gallery .image-box, #gallery .text-box {
+  border-radius: 10px;
+}
+#gallery .image-box:not(:last-child), #gallery .text-box:not(:last-child) {
+  margin-bottom: 10px;
+}
+@media (orientation: portrait) and (max-width: 1025px) {
+  #gallery .image-box, #gallery .text-box {
+    width: 95%;
+    margin-right: unset;
+    margin: auto;
+    margin-bottom: 10px;
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 
 /* Blog Section ----------------------------------------------- */
 #blog {
@@ -455,6 +494,11 @@ body {
   color: rgb(200, 200, 200);
   margin: 15px 0;
 }
+@media (orientation: portrait) and (max-width: 1025px) {
+  #blog .blog-container .featured-article h3 {
+    font-size: 2.2rem;
+  }
+}
 #blog .blog-container .featured-article p {
   font-size: 1.2rem;
   color: rgb(150, 150, 150);
@@ -464,8 +508,18 @@ body {
   display: flex;
   justify-content: space-between;
 }
+@media (orientation: portrait) and (max-width: 1025px) {
+  #blog .blog-container .smaller-articles {
+    flex-direction: column;
+  }
+}
 #blog .blog-container .smaller-articles .article {
   opacity: 0;
+}
+@media (orientation: portrait) and (max-width: 1025px) {
+  #blog .blog-container .smaller-articles .article {
+    margin-bottom: 20px;
+  }
 }
 #blog .blog-container .smaller-articles .article h3 {
   font-size: 1.8rem;
@@ -475,6 +529,11 @@ body {
 @media (orientation: landscape) and (max-width: 1181px) {
   #blog .blog-container .smaller-articles .article h3 {
     font-size: 1.4rem;
+  }
+}
+@media (orientation: portrait) and (max-width: 1025px) {
+  #blog .blog-container .smaller-articles .article h3 {
+    font-size: 1.7rem;
   }
 }
 #blog .blog-container .smaller-articles .article p {

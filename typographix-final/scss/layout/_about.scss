@@ -15,6 +15,10 @@
             @include tablet-horizontal {
                 margin-left: 5%;
             }
+
+            @include tablet-vertical {
+                margin-left: 5%;
+            }
         }
 
         p {
@@ -23,6 +27,11 @@
             line-height: 1.8;
 
             @include tablet-horizontal {
+                width: 90%;
+                margin-left: 5%;
+            }
+
+            @include tablet-vertical {
                 width: 90%;
                 margin-left: 5%;
             }
