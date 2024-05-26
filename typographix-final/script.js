@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
+    const isMobile = window.innerWidth <= 1025;
+
     //Function to create and observe IntersectionObservers
 
     const createObserver = (selector, observerOptions, toggleClass) => {
@@ -18,18 +20,26 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     //Create observers for different sections
-    createObserver("#about .phrase", { root: null, treshold: 1 }, "active");
+    createObserver(
+        "#about .phrase",
+        { root: null, treshold: isMobile ? 0.5 : 1 },
+        "active"
+    );
     createObserver(
         "#gallery .image-box",
-        { root: null, treshold: 1 },
+        { root: null, treshold: isMobile ? 0.5 : 1 },
         "active"
     );
     createObserver(
         "#blog .featured-article, #blog .article",
-        { root: null, treshold: 0.3 },
+        { root: null, treshold: isMobile ? 0 : 0.3 },
         "fadeInUp"
     );
-    createObserver("#contact > div", { root: null, treshold: 0.5 }, "fadeInUp");
+    createObserver(
+        "#contact > div",
+        { root: null, treshold: isMobile ? 0 : 0.5 },
+        "fadeInUp"
+    );
 });
 
 //Navigation -------------------------------------------
